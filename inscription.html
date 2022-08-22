@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="valide.js"></script>
+    <script></script>
+    <title>sign up</title>
+
+</head>
+<body>
+    <h3 id="msg"></h3>
+
+<form action="">
+<fieldset>
+    <legend>Inscription</legend>
+            <table>
+                <tr>
+                    <td><label>Nom</label></td>
+                    <td><input type="text" name="" id="nom" ><span id="ernom">⁎</span></td>
+                </tr>
+
+                <tr>
+                    <td><label for="b">Prenom</label></td>
+                    <td><input type="text" name="" id="prenom" ><span id="erpre">⁎</span></td>
+                </tr>
+                <tr>
+                    <td><label for="b">date de naissance</label></td>
+                    <td><input type="date" id="dn" required ><span id="erdn" >⁎</span></td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Code posal</label></td>
+                    <td><input type="text" name="" id="cp"><span id="ercp">⁎</span></td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Pays</label></td>
+                    <td>
+                      <select id="pay">
+                        <option value="" disabled selected>chose</option>
+                        <option value="maroc">maroc</option>
+                        <option value="france">france</option>
+                      </select>
+                    <span id="erp">⁎</span></td>
+                </tr>
+
+                <tr>
+                    <td><label>Gener</label></td>
+                    <td><input type="radio" name="g" id="m"><label >Masculin</label>
+                        <input type="radio" name="g" id="f" ><label>Féminin</label>
+                    <span id="vg">⁎</span></td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Prefernces de contact</label></td>
+                    <td><input type="checkbox" name="pfcontact" >Fax<input type="checkbox" name="pfcontact" >Email<input type="checkbox" name="pfcontact" >Telephone<span id="erpfcontact">⁎</span></td>
+                </tr>
+
+                <tr>
+                    <td><label >Email</label></td>
+                    <td><input type="text" name="" id="email" ><span id="erem">⁎</span></td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Telephon</label></td>
+                    <td><input type="text" name="" id="tele" ><span id="ertele">⁎</span></td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Password</label>/td>
+                    <td><input type="password" name="" id="pw" ><span id="erpw">⁎</span></td>
+                </tr>
+
+                <tr>
+                    <td><label for="">Verification password</label></td>
+                    <td><input type="password" name="" id="vpw"><span id="ervpw">⁎</span></td>
+                </tr>       
+                
+                
+                <tr>
+                    <td></td>
+                    <td><button type="button" onclick="Validator()">Envoyer</button><button type="reset">Efacer</button></td>
+                </tr>   
+
+                <h3 id="date"></h3>
+
+        </table>
+</fieldset>
+</form>
+</body>
+</html>
